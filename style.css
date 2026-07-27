@@ -1,0 +1,1071 @@
+/* =====================================================
+   DOLARÍN - ESTILOS PRINCIPALES
+   Diseño Material 3 / Fintech Dark
+===================================================== */
+
+
+/* ===============================
+   VARIABLES
+================================ */
+
+:root {
+
+    --background:
+    #0f172a;
+
+    --surface:
+    #111827;
+
+    --surface-light:
+    #1e293b;
+
+    --primary:
+    #2563eb;
+
+    --primary-light:
+    #3b82f6;
+
+    --success:
+    #22c55e;
+
+    --text:
+    #f8fafc;
+
+    --text-secondary:
+    #94a3b8;
+
+    --border:
+    rgba(255,255,255,0.08);
+
+
+    --radius:
+    24px;
+
+
+    --shadow:
+    0 20px 50px rgba(0,0,0,.35);
+
+
+}
+
+
+
+
+
+/* ===============================
+   RESET
+================================ */
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+
+    font-family:
+    'Inter',
+    sans-serif;
+
+
+    background:
+    var(--background);
+
+
+    color:
+    var(--text);
+
+
+    line-height:
+    1.6;
+
+}
+
+
+
+img {
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+.container {
+
+
+    width:
+    min(1120px,90%);
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+   NAVBAR
+================================ */
+
+
+.navbar {
+
+
+    position:
+    fixed;
+
+
+    top:0;
+
+
+    width:100%;
+
+
+    z-index:1000;
+
+
+    backdrop-filter:
+    blur(15px);
+
+
+    background:
+    rgba(15,23,42,.75);
+
+
+    border-bottom:
+    1px solid var(--border);
+
+
+}
+
+
+
+.nav-content {
+
+
+    height:
+    80px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+}
+
+
+
+.brand {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:12px;
+
+
+    font-size:1.5rem;
+
+
+    font-weight:800;
+
+
+}
+
+
+
+.brand img {
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+    border-radius:14px;
+
+
+}
+
+
+
+
+
+nav {
+
+
+    display:flex;
+
+
+    gap:35px;
+
+
+}
+
+
+
+nav a {
+
+
+    color:
+    var(--text-secondary);
+
+
+    font-weight:500;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+nav a:hover {
+
+
+    color:
+    white;
+
+
+}
+
+
+
+.menu-button {
+
+
+    display:none;
+
+
+    background:none;
+
+
+    border:0;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   HERO
+================================ */
+
+
+.hero {
+
+
+    min-height:
+    100vh;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    padding-top:
+    100px;
+
+
+    background:
+
+
+    radial-gradient(
+    circle at top right,
+    rgba(37,99,235,.25),
+    transparent 35%
+    );
+
+
+}
+
+
+
+.hero-content {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    1fr 1fr;
+
+
+    gap:60px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+.hero-text h1 {
+
+
+    font-size:
+    clamp(2.5rem,5vw,4rem);
+
+
+    line-height:
+    1.1;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.hero-text strong {
+
+
+    color:
+    var(--primary-light);
+
+
+}
+
+
+
+.hero-text p {
+
+
+    color:
+    var(--text-secondary);
+
+
+    font-size:
+    1.15rem;
+
+
+    max-width:
+    550px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+.hero-buttons {
+
+
+    display:flex;
+
+
+    gap:20px;
+
+
+}
+
+
+
+.btn {
+
+
+    padding:
+    15px 30px;
+
+
+    border-radius:
+    50px;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn:hover {
+
+
+    transform:
+    translateY(-3px);
+
+
+}
+
+
+
+.primary {
+
+
+    background:
+    var(--primary);
+
+
+}
+
+
+
+.secondary {
+
+
+    border:
+    1px solid var(--border);
+
+
+}
+
+
+
+
+
+
+.hero-image img {
+
+
+    animation:
+    floating 4s infinite ease-in-out;
+
+
+    filter:
+    drop-shadow(0 30px 40px rgba(0,0,0,.5));
+
+
+}
+
+
+
+@keyframes floating {
+
+
+    50% {
+
+        transform:
+        translateY(-15px);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   STATS
+================================ */
+
+
+.stats {
+
+
+    padding:
+    50px 0;
+
+
+}
+
+
+
+.stats-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+.stat-card {
+
+
+    background:
+    var(--surface);
+
+
+    padding:30px;
+
+
+    border-radius:
+    var(--radius);
+
+
+    border:
+    1px solid var(--border);
+
+
+    text-align:center;
+
+
+}
+
+
+
+.stat-card span {
+
+
+    font-size:
+    35px;
+
+
+    color:
+    var(--success);
+
+
+}
+
+
+
+.stat-card p {
+
+
+    color:
+    var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   SECCIONES
+================================ */
+
+
+.section {
+
+
+    padding:
+    100px 0;
+
+
+}
+
+
+
+.section h2,
+.market-section h2,
+.download h2 {
+
+
+    text-align:center;
+
+
+    font-size:
+    2.3rem;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.section-description {
+
+
+    text-align:center;
+
+
+    color:
+    var(--text-secondary);
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+.cards {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+.card {
+
+
+    background:
+    var(--surface);
+
+
+    padding:35px;
+
+
+    border-radius:
+    var(--radius);
+
+
+    border:
+    1px solid var(--border);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.card:hover {
+
+
+    transform:
+    translateY(-8px);
+
+
+    box-shadow:
+    var(--shadow);
+
+
+}
+
+
+
+.card span {
+
+
+    font-size:40px;
+
+
+    color:
+    var(--primary-light);
+
+
+}
+
+
+
+
+
+
+/* ===============================
+   MERCADOS
+================================ */
+
+
+.market-section {
+
+
+    padding:
+    100px 0;
+
+
+}
+
+
+
+.market-grid {
+
+
+    margin-top:50px;
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+.market {
+
+
+    background:
+    var(--surface);
+
+
+    padding:35px;
+
+
+    text-align:center;
+
+
+    border-radius:
+    var(--radius);
+
+
+    border:
+    1px solid var(--border);
+
+
+}
+
+
+
+.market img {
+
+
+    height:70px;
+
+
+    margin:auto;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+   SEGURIDAD
+================================ */
+
+
+.security {
+
+
+    text-align:center;
+
+
+    background:
+    var(--surface);
+
+
+    padding:60px;
+
+
+    border-radius:
+    var(--radius);
+
+
+}
+
+
+
+.security span {
+
+
+    font-size:60px;
+
+
+    color:
+    var(--success);
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   DOWNLOAD
+================================ */
+
+
+.download {
+
+
+    text-align:center;
+
+
+    padding:
+    100px 0;
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+    );
+
+
+}
+
+
+
+.play-button {
+
+
+    display:inline-block;
+
+
+    margin-top:30px;
+
+
+    background:white;
+
+
+    color:#111827;
+
+
+    padding:15px 35px;
+
+
+    border-radius:50px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+
+footer {
+
+
+    background:
+    #020617;
+
+
+    padding:
+    50px 0;
+
+
+}
+
+
+
+.footer-content {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+}
+
+
+
+.footer-content a {
+
+
+    display:block;
+
+
+    color:
+    var(--text-secondary);
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.copyright {
+
+
+    text-align:center;
+
+
+    color:
+    var(--text-secondary);
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   RESPONSIVE MOBILE
+================================ */
+
+
+@media(max-width:850px){
+
+
+
+nav {
+
+
+    display:none;
+
+
+}
+
+
+
+.menu-button {
+
+
+    display:block;
+
+
+}
+
+
+
+.hero-content {
+
+
+    grid-template-columns:1fr;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.hero-text p {
+
+
+    margin:auto;
+
+
+}
+
+
+
+.hero-buttons {
+
+
+    justify-content:center;
+
+
+}
+
+
+
+.stats-grid,
+.cards,
+.market-grid {
+
+
+    grid-template-columns:
+    1fr;
+
+
+}
+
+
+
+.footer-content {
+
+
+    flex-direction:column;
+
+
+    gap:30px;
+
+
+}
+
+
+}
