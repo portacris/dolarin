@@ -1,342 +1,708 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 
+    <!-- ==============================
+         INFORMACIÓN BÁSICA
+    =============================== -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dolarín | Tipo de Cambio de Bolivia</title>
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Consulta el dólar oficial, mercado P2P y convierte valores en segundos con Dolarín.">
+    <title>
+        Dolarín - Tipo de Cambio Bolivia | Mercado P2P
+    </title>
 
-    <meta name="theme-color" content="#0F172A">
 
-    <link rel="icon" href="img/logo.png">
+    <meta name="description"
+    content="Dolarín muestra el tipo de cambio del dólar en Bolivia, precios USDT P2P, mercados digitales y referencias actualizadas para usuarios bolivianos.">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Material Symbols -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <meta name="keywords"
+    content="
+    dólar Bolivia,
+    tipo de cambio Bolivia,
+    USDT Bolivia,
+    Binance Bolivia,
+    mercado P2P,
+    dólar paralelo Bolivia,
+    Dolarín
+    ">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="author"
+    content="Dolarín">
+
+
+    <!-- ==============================
+         OPEN GRAPH
+         Compartir redes sociales
+    =============================== -->
+
+    <meta property="og:title"
+    content="Dolarín - El mercado cambiario de Bolivia">
+
+
+    <meta property="og:description"
+    content="Consulta el tipo de cambio, mercado P2P y referencias digitales desde una sola aplicación.">
+
+
+    <meta property="og:type"
+    content="website">
+
+
+    <meta property="og:image"
+    content="assets/logo.png">
+
+
+    <meta property="og:url"
+    content="https://portacris.github.io/dolarin/">
+
+
+
+    <!-- ==============================
+         FAVICON
+    =============================== -->
+
+    <link rel="icon"
+    href="assets/favicon.png"
+    type="image/png">
+
+
+
+    <!-- ==============================
+         MATERIAL ICONS
+    =============================== -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+
+
+    <!-- ==============================
+         GOOGLE FONT
+         Material 3 Style
+    =============================== -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+
+    <!-- ==============================
+         CSS PRINCIPAL
+    =============================== -->
+
+    <link rel="stylesheet"
+    href="style.css">
+
 
 </head>
 
+
+
 <body>
 
-<!-- ===========================
-HEADER
-=========================== -->
 
-<header class="header">
+<!-- ==============================
+     HEADER / NAVBAR
+================================ -->
 
-    <div class="container">
+<header class="navbar">
 
-        <div class="logo">
 
-            <img src="img/logo.png" alt="Dolarín">
+    <div class="container nav-content">
 
-            <span>Dolarín</span>
+
+        <div class="brand">
+
+
+            <img src="assets/logo.png"
+            alt="Logo Dolarín">
+
+
+            <span>
+                Dolarín
+            </span>
+
 
         </div>
+
+
 
         <nav>
 
-            <a href="#inicio">Inicio</a>
+            <a href="#inicio">
+                Inicio
+            </a>
 
-            <a href="#funciones">Funciones</a>
 
-            <a href="#capturas">Capturas</a>
+            <a href="#funciones">
+                Funciones
+            </a>
 
-            <a href="privacy.html">Privacidad</a>
+
+            <a href="#mercados">
+                Mercados
+            </a>
+
+
+            <a href="#seguridad">
+                Seguridad
+            </a>
+
 
         </nav>
 
-        <a class="btn-download" href="#">
 
-            Google Play
 
-        </a>
+        <button class="menu-button">
+
+            <span class="material-icons">
+                menu
+            </span>
+
+        </button>
+
 
     </div>
+
 
 </header>
 
-<!-- ===========================
-HERO
-=========================== -->
 
-<section class="hero" id="inicio">
 
-    <div class="container hero-grid">
 
-        <div>
 
-            <span class="badge">
+<!-- ==============================
+     HERO PRINCIPAL
+================================ -->
 
-                🇧🇴 Bolivia · Dólar Hoy
+<section id="inicio"
+class="hero">
 
-            </span>
 
-            <h1>
+<div class="container hero-content">
 
-                Consulta el tipo de cambio de Bolivia
-                desde una sola aplicación.
 
-            </h1>
+<div class="hero-text">
 
-            <p>
 
-                Dolarín te permite consultar el dólar oficial,
-                comparar el mercado P2P y convertir valores
-                en segundos con una interfaz moderna y rápida.
+<h1>
 
-            </p>
+El tipo de cambio de Bolivia,
+<br>
 
-            <div class="buttons">
+<strong>
+en un solo lugar.
+</strong>
 
-                <a class="primary" href="#">
+</h1>
 
-                    Descargar en Google Play
 
-                </a>
 
-                <a class="secondary" href="#capturas">
+<p>
 
-                    Ver capturas
+Dolarín conecta usuarios con información
+del mercado cambiario, precios P2P y
+referencias digitales para tomar mejores decisiones.
 
-                </a>
+</p>
 
-            </div>
 
-        </div>
 
-        <div class="phone">
+<div class="hero-buttons">
 
-            <img src="img/hero-phone.png">
 
-        </div>
+<a href="#descargar"
+class="btn primary">
 
-    </div>
+Descargar App
+
+</a>
+
+
+
+<a href="#funciones"
+class="btn secondary">
+
+Conocer más
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="hero-image">
+
+
+<img src="assets/app-preview.png"
+alt="Aplicación Dolarín">
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<!-- ===========================
-FUNCIONES
-=========================== -->
 
-<section id="funciones">
 
-    <div class="container">
 
-        <h2>
 
-            Todo lo que necesitas
-            para consultar el dólar
+<!-- ==============================
+     ESTADÍSTICAS
+================================ -->
 
-        </h2>
+<section class="stats">
 
-        <div class="cards">
 
-            <div class="card">
+<div class="container stats-grid">
 
-                <span class="material-symbols-rounded">
-paid
-</span>
 
-                <h3>Dólar Oficial</h3>
+<div class="stat-card">
 
-                <p>
-
-                    Consulta el valor oficial publicado por el Banco Central.
-
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <span class="material-symbols-rounded">
+<span class="material-icons">
 currency_exchange
 </span>
 
-                <h3>Mercado P2P</h3>
+<h3>
+USDT P2P
+</h3>
 
-                <p>
+<p>
+Mercados digitales
+</p>
 
-                    Compara diferentes plataformas y encuentra el mejor precio.
+</div>
 
-                </p>
 
-            </div>
 
-            <div class="card">
 
-                <span class="material-symbols-rounded">
-bolt
+<div class="stat-card">
+
+<span class="material-icons">
+trending_up
 </span>
 
-                <h3>Actualización rápida</h3>
+<h3>
+Actualizado
+</h3>
 
-                <p>
+<p>
+Información dinámica
+</p>
 
-                    Actualiza todas las cotizaciones con un solo toque.
+</div>
 
-                </p>
 
-            </div>
 
-            <div class="card">
 
-                <span class="material-symbols-rounded">
-calculate
+
+<div class="stat-card">
+
+<span class="material-icons">
+public
 </span>
 
-                <h3>Conversor</h3>
+<h3>
+Bolivia
+</h3>
 
-                <p>
+<p>
+Diseñado para usuarios bolivianos
+</p>
 
-                    Convierte entre bolivianos y dólares de forma inmediata.
+</div>
 
-                </p>
 
-            </div>
+</div>
 
-            <div class="card">
-
-                <span class="material-symbols-rounded">
-notifications
-</span>
-
-                <h3>Próximamente</h3>
-
-                <p>
-
-                    Alertas inteligentes cuando el precio cambie.
-
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <span class="material-symbols-rounded">
-security
-</span>
-
-                <h3>Seguro</h3>
-
-                <p>
-
-                    No necesitas crear una cuenta para utilizar Dolarín.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
 
 </section>
 
-<!-- ===========================
-CAPTURAS
-=========================== -->
 
-<section id="capturas">
 
-    <div class="container">
 
-        <h2>
 
-            Capturas de la aplicación
 
-        </h2>
 
-        <div class="screens">
+<!-- ==============================
+     FUNCIONES
+================================ -->
 
-            <img src="img/screenshot1.png">
 
-            <img src="img/screenshot2.png">
+<section id="funciones"
+class="section">
 
-            <img src="img/screenshot3.png">
 
-            <img src="img/screenshot4.png">
+<div class="container">
 
-        </div>
 
-    </div>
+<h2>
+Todo lo que necesitas
+</h2>
+
+
+<p class="section-description">
+
+Herramientas simples para conocer
+el comportamiento del mercado cambiario.
+
+</p>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<span class="material-icons">
+payments
+</span>
+
+
+<h3>
+Tipo de cambio
+</h3>
+
+
+<p>
+
+Consulta referencias del dólar
+y monedas digitales.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<span class="material-icons">
+swap_horiz
+</span>
+
+
+<h3>
+Mercado P2P
+</h3>
+
+
+<p>
+
+Información de plataformas digitales
+como Binance y otros mercados.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<span class="material-icons">
+analytics
+</span>
+
+
+<h3>
+Seguimiento
+</h3>
+
+
+<p>
+
+Visualiza tendencias y cambios
+del mercado.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<!-- ===========================
-CTA
-=========================== -->
 
-<section class="cta">
 
-    <div class="container">
 
-        <h2>
 
-            Descarga Dolarín y mantente informado.
 
-        </h2>
 
-        <a href="#" class="primary">
+<!-- ==============================
+     MERCADOS
+================================ -->
 
-            Disponible en Google Play
 
-        </a>
+<section id="mercados"
+class="market-section">
 
-    </div>
+
+<div class="container">
+
+
+<h2>
+
+Mercados conectados
+
+</h2>
+
+
+<div class="market-grid">
+
+
+<div class="market">
+
+<img src="assets/binance.png"
+alt="Binance">
+
+<h3>
+Binance P2P
+</h3>
+
+</div>
+
+
+
+<div class="market">
+
+<img src="assets/bybit.png"
+alt="Bybit">
+
+
+<h3>
+Bybit
+</h3>
+
+
+</div>
+
+
+
+
+<div class="market">
+
+<img src="assets/eldorado.png"
+alt="Eldorado">
+
+
+<h3>
+Eldorado
+</h3>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<!-- ===========================
-FOOTER
-=========================== -->
+
+
+
+
+
+
+<!-- ==============================
+     SEGURIDAD
+================================ -->
+
+<section id="seguridad"
+class="section">
+
+
+<div class="container security">
+
+
+<span class="material-icons">
+verified_user
+</span>
+
+
+<h2>
+Información transparente
+</h2>
+
+
+<p>
+
+Dolarín no realiza operaciones financieras.
+Nuestra misión es brindar información
+para ayudarte a comparar mercados.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==============================
+     DESCARGA
+================================ -->
+
+
+<section id="descargar"
+class="download">
+
+
+<div class="container">
+
+
+<h2>
+Descarga Dolarín
+</h2>
+
+
+<p>
+
+Disponible próximamente en Google Play.
+
+</p>
+
+
+
+<a class="play-button">
+
+Google Play
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==============================
+     FOOTER
+================================ -->
+
 
 <footer>
 
-    <div class="container">
 
-        <img src="img/logo.png">
+<div class="container footer-content">
 
-        <h3>Dolarín</h3>
 
-        <p>
+<div>
 
-            Consulta el tipo de cambio de Bolivia de forma rápida,
-            sencilla y gratuita.
+<h3>
+Dolarín
+</h3>
 
-        </p>
 
-        <div class="links">
+<p>
+Tipo de cambio Bolivia.
+</p>
 
-            <a href="privacy.html">
 
-                Política de privacidad
+</div>
 
-            </a>
 
-        </div>
 
-        <small>
+<div>
 
-            © 2026 Dolarín. Todos los derechos reservados.
 
-        </small>
+<a href="privacy.html">
+Privacidad
+</a>
 
-    </div>
+
+<a href="terms.html">
+Términos
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<p class="copyright">
+
+© <span id="year"></span> Dolarín.
+Todos los derechos reservados.
+
+</p>
+
+
 
 </footer>
 
-<script src="js/app.js"></script>
+
+
+
+
+
+
+<!-- ==============================
+     JAVASCRIPT
+================================ -->
+
+
+<script src="app.js"></script>
+
 
 </body>
+
 </html>
