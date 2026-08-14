@@ -1,708 +1,152 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-BO">
 <head>
-
-    <!-- ==============================
-         INFORMACIÓN BÁSICA
-    =============================== -->
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Dolarín - Tipo de Cambio Bolivia | Mercado P2P
-    </title>
-
-
-    <meta name="description"
-    content="Dolarín muestra el tipo de cambio del dólar en Bolivia, precios USDT P2P, mercados digitales y referencias actualizadas para usuarios bolivianos.">
-
-
-    <meta name="keywords"
-    content="
-    dólar Bolivia,
-    tipo de cambio Bolivia,
-    USDT Bolivia,
-    Binance Bolivia,
-    mercado P2P,
-    dólar paralelo Bolivia,
-    Dolarín
-    ">
-
-
-    <meta name="author"
-    content="Dolarín">
-
-
-    <!-- ==============================
-         OPEN GRAPH
-         Compartir redes sociales
-    =============================== -->
-
-    <meta property="og:title"
-    content="Dolarín - El mercado cambiario de Bolivia">
-
-
-    <meta property="og:description"
-    content="Consulta el tipo de cambio, mercado P2P y referencias digitales desde una sola aplicación.">
-
-
-    <meta property="og:type"
-    content="website">
-
-
-    <meta property="og:image"
-    content="assets/logo.png">
-
-
-    <meta property="og:url"
-    content="https://portacris.github.io/dolarin/">
-
-
-
-    <!-- ==============================
-         FAVICON
-    =============================== -->
-
-    <link rel="icon"
-    href="assets/favicon.png"
-    type="image/png">
-
-
-
-    <!-- ==============================
-         MATERIAL ICONS
-    =============================== -->
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-
-
-
-    <!-- ==============================
-         GOOGLE FONT
-         Material 3 Style
-    =============================== -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-
-
-    <!-- ==============================
-         CSS PRINCIPAL
-    =============================== -->
-
-    <link rel="stylesheet"
-    href="style.css">
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Consulta el dólar BCB hoy en Bolivia, la cotización oficial publicada para mañana y referencias de Binance, Bybit y Airtm con Dolarín.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="application-name" content="Dolarín">
+  <meta name="apple-mobile-web-app-title" content="Dolarín">
+  <link rel="canonical" href="https://portacris.github.io/dolarin/">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:site_name" content="Dolarín">
+  <meta property="og:title" content="Dolarín – Dólar BCB hoy en Bolivia">
+  <meta property="og:description" content="Consulta el dólar oficial del BCB para hoy y mañana, además de referencias de Binance, Bybit y Airtm.">
+  <meta property="og:url" content="https://portacris.github.io/dolarin/">
+  <meta property="og:image" content="https://portacris.github.io/dolarin/assets/icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dolarín – Dólar BCB hoy en Bolivia">
+  <meta name="twitter:description" content="Cotización oficial del dólar BCB y referencias del mercado para Bolivia.">
+  <meta name="twitter:image" content="https://portacris.github.io/dolarin/assets/icon.png">
+  <meta name="theme-color" content="#071728">
+  <title>Dólar BCB hoy en Bolivia | Dolarín</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://portacris.github.io/dolarin/#website",
+        "url": "https://portacris.github.io/dolarin/",
+        "name": "Dolarín",
+        "alternateName": ["Dolarín Bolivia", "Dólar Bolivia"],
+        "inLanguage": "es-BO"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://portacris.github.io/dolarin/#app",
+        "name": "Dolarín",
+        "operatingSystem": "Android",
+        "applicationCategory": "FinanceApplication",
+        "description": "Aplicación boliviana para consultar la cotización oficial del dólar del BCB para hoy y mañana y comparar referencias de Binance, Bybit y Airtm.",
+        "url": "https://portacris.github.io/dolarin/",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.dolarin.bolivia",
+        "image": "https://portacris.github.io/dolarin/assets/icon.png",
+        "inLanguage": "es-BO",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BOB"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://portacris.github.io/dolarin/#organization",
+        "name": "Dolarín",
+        "url": "https://portacris.github.io/dolarin/",
+        "logo": "https://portacris.github.io/dolarin/assets/icon.png",
+        "sameAs": ["https://play.google.com/store/apps/details?id=com.dolarin.bolivia"]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root { color-scheme: dark; --bg:#071728; --panel:#0b2941; --text:#f8fafc; --muted:#a9b8c9; --blue:#38bdf8; --gold:#f9b229; --green:#10d59a; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; min-height:100vh; font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--text); background:radial-gradient(circle at 80% 0,rgba(56,189,248,.16),transparent 32%),linear-gradient(155deg,#061321,var(--bg) 48%,#0a3042); }
+    a { color:inherit; }
+    .wrap { width:min(1120px,calc(100% - 36px)); margin:auto; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:24px 0; }
+    .brand { display:flex; align-items:center; gap:12px; font-size:22px; font-weight:900; text-decoration:none; }
+    .brand img { width:48px; height:48px; border-radius:14px; }
+    .nav-links { display:flex; gap:20px; color:var(--muted); font-size:14px; }
+    .hero { display:grid; grid-template-columns:1.08fr .92fr; gap:64px; align-items:center; padding:72px 0 96px; }
+    .eyebrow { display:inline-flex; padding:9px 14px; border:1px solid rgba(56,189,248,.25); border-radius:999px; color:var(--blue); background:rgba(56,189,248,.08); font-weight:800; letter-spacing:.1em; font-size:12px; }
+    h1 { max-width:720px; margin:24px 0 20px; font-size:clamp(46px,7vw,82px); line-height:.98; letter-spacing:-.055em; }
+    h1 span { color:var(--gold); }
+    .lead { max-width:650px; color:var(--muted); font-size:clamp(18px,2.2vw,23px); line-height:1.55; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
+    .play { display:inline-flex; align-items:center; gap:12px; padding:16px 22px; border-radius:17px; color:#071626; background:linear-gradient(135deg,var(--gold),#ffd36d); box-shadow:0 18px 42px rgba(249,178,41,.22); font-weight:900; text-decoration:none; }
+    .secondary { display:inline-flex; align-items:center; padding:16px 20px; border:1px solid rgba(148,163,184,.25); border-radius:17px; color:var(--text); background:rgba(255,255,255,.04); text-decoration:none; font-weight:750; }
+    .trust { margin-top:20px; color:#7f94a9; font-size:13px; }
+    .phone { position:relative; max-width:410px; margin:auto; padding:22px; border:1px solid rgba(56,189,248,.22); border-radius:42px; background:rgba(4,18,33,.78); box-shadow:0 30px 90px rgba(0,0,0,.42); }
+    .phone::before { content:""; position:absolute; inset:-30px; z-index:-1; border-radius:60px; background:radial-gradient(circle,rgba(56,189,248,.16),transparent 65%); }
+    .phone-head { display:flex; align-items:center; gap:13px; }
+    .phone-head img { width:58px; height:58px; border-radius:18px; }
+    .phone small { color:var(--blue); font-weight:800; letter-spacing:.08em; }
+    .phone h2 { margin:4px 0 0; font-size:27px; }
+    .rate { margin-top:24px; padding:24px; border-radius:25px; background:linear-gradient(145deg,#0c304a,#0a263b); border:1px solid rgba(56,189,248,.18); }
+    .rate-label { color:#a8bad0; font-size:13px; font-weight:800; letter-spacing:.09em; }
+    .rate-value { margin:14px 0; color:var(--green); font-size:55px; font-weight:950; }
+    .tomorrow { padding-top:16px; border-top:1px solid rgba(148,163,184,.16); color:var(--muted); }
+    .tomorrow strong { display:block; margin-top:6px; color:var(--text); font-size:22px; }
+    .features { padding:32px 0 100px; }
+    .section-title { max-width:700px; margin:0 auto 38px; text-align:center; }
+    .section-title h2 { margin:0 0 12px; font-size:clamp(30px,4vw,46px); }
+    .section-title p { color:var(--muted); line-height:1.6; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .feature { padding:25px; border:1px solid rgba(148,163,184,.16); border-radius:23px; background:rgba(11,41,65,.58); }
+    .feature b { display:block; margin:14px 0 8px; font-size:18px; }
+    .feature p { margin:0; color:var(--muted); line-height:1.55; }
+    .icon { display:grid; place-items:center; width:46px; height:46px; border-radius:14px; color:var(--blue); background:rgba(56,189,248,.1); font-size:22px; }
+    .cta { margin-bottom:82px; padding:42px; border:1px solid rgba(249,178,41,.22); border-radius:30px; text-align:center; background:linear-gradient(145deg,rgba(249,178,41,.09),rgba(56,189,248,.08)); }
+    .cta h2 { margin:0 0 12px; font-size:34px; }
+    .cta p { margin:0 0 24px; color:var(--muted); }
+    footer { display:flex; justify-content:space-between; gap:20px; padding:28px 0 42px; border-top:1px solid rgba(148,163,184,.15); color:#7f94a9; font-size:13px; }
+    footer div { display:flex; gap:18px; }
+    @media(max-width:780px){ .nav-links{display:none}.hero{grid-template-columns:1fr;padding:42px 0 72px}.grid{grid-template-columns:1fr}.phone{width:min(100%,410px)}footer{flex-direction:column}.cta{padding:30px 20px} }
+  </style>
 </head>
-
-
-
 <body>
-
-
-<!-- ==============================
-     HEADER / NAVBAR
-================================ -->
-
-<header class="navbar">
-
-
-    <div class="container nav-content">
-
-
-        <div class="brand">
-
-
-            <img src="assets/logo.png"
-            alt="Logo Dolarín">
-
-
-            <span>
-                Dolarín
-            </span>
-
-
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#"><img src="assets/icon.png" alt="Logo de Dolarín">Dolarín</a>
+      <div class="nav-links"><a href="#funciones">Funciones</a><a href="https://portacris.github.io/dolarin/privacy.html">Privacidad</a></div>
+    </nav>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">HECHA PARA BOLIVIA</span>
+          <h1>Dólar BCB hoy en Bolivia, <span>claro y actualizado.</span></h1>
+          <p class="lead">Consulta la referencia oficial del BCB, conoce la cotización publicada para mañana y compara Binance, Bybit y Airtm desde un solo lugar.</p>
+          <div class="actions">
+            <a class="play" href="https://play.google.com/store/apps/details?id=com.dolarin.bolivia">▶ Descargar gratis en Google Play</a>
+            <a class="secondary" href="#funciones">Ver funciones</a>
+          </div>
+          <p class="trust">Gratuita · Sin publicidad personalizada · Información transparente</p>
         </div>
-
-
-
-        <nav>
-
-            <a href="#inicio">
-                Inicio
-            </a>
-
-
-            <a href="#funciones">
-                Funciones
-            </a>
-
-
-            <a href="#mercados">
-                Mercados
-            </a>
-
-
-            <a href="#seguridad">
-                Seguridad
-            </a>
-
-
-        </nav>
-
-
-
-        <button class="menu-button">
-
-            <span class="material-icons">
-                menu
-            </span>
-
-        </button>
-
-
-    </div>
-
-
-</header>
-
-
-
-
-
-<!-- ==============================
-     HERO PRINCIPAL
-================================ -->
-
-<section id="inicio"
-class="hero">
-
-
-<div class="container hero-content">
-
-
-<div class="hero-text">
-
-
-<h1>
-
-El tipo de cambio de Bolivia,
-<br>
-
-<strong>
-en un solo lugar.
-</strong>
-
-</h1>
-
-
-
-<p>
-
-Dolarín conecta usuarios con información
-del mercado cambiario, precios P2P y
-referencias digitales para tomar mejores decisiones.
-
-</p>
-
-
-
-<div class="hero-buttons">
-
-
-<a href="#descargar"
-class="btn primary">
-
-Descargar App
-
-</a>
-
-
-
-<a href="#funciones"
-class="btn secondary">
-
-Conocer más
-
-</a>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="hero-image">
-
-
-<img src="assets/logo.png"
-alt="Aplicación Dolarín">
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- ==============================
-     ESTADÍSTICAS
-================================ -->
-
-<section class="stats">
-
-
-<div class="container stats-grid">
-
-
-<div class="stat-card">
-
-<span class="material-icons">
-currency_exchange
-</span>
-
-<h3>
-USDT P2P
-</h3>
-
-<p>
-Mercados digitales
-</p>
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-<span class="material-icons">
-trending_up
-</span>
-
-<h3>
-Actualizado
-</h3>
-
-<p>
-Información dinámica
-</p>
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-<span class="material-icons">
-public
-</span>
-
-<h3>
-Bolivia
-</h3>
-
-<p>
-Diseñado para usuarios bolivianos
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==============================
-     FUNCIONES
-================================ -->
-
-
-<section id="funciones"
-class="section">
-
-
-<div class="container">
-
-
-<h2>
-Todo lo que necesitas
-</h2>
-
-
-<p class="section-description">
-
-Herramientas simples para conocer
-el comportamiento del mercado cambiario.
-
-</p>
-
-
-
-<div class="cards">
-
-
-
-<div class="card">
-
-
-<span class="material-icons">
-payments
-</span>
-
-
-<h3>
-Tipo de cambio
-</h3>
-
-
-<p>
-
-Consulta referencias del dólar
-y monedas digitales.
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<span class="material-icons">
-swap_horiz
-</span>
-
-
-<h3>
-Mercado P2P
-</h3>
-
-
-<p>
-
-Información de plataformas digitales
-como Binance y otros mercados.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<span class="material-icons">
-analytics
-</span>
-
-
-<h3>
-Seguimiento
-</h3>
-
-
-<p>
-
-Visualiza tendencias y cambios
-del mercado.
-
-</p>
-
-
-</div>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==============================
-     MERCADOS
-================================ -->
-
-
-<section id="mercados"
-class="market-section">
-
-
-<div class="container">
-
-
-<h2>
-
-Mercados conectados
-
-</h2>
-
-
-<div class="market-grid">
-
-
-<div class="market">
-
-<img src="assets/binance.png"
-alt="Binance">
-
-<h3>
-Binance P2P
-</h3>
-
-</div>
-
-
-
-<div class="market">
-
-<img src="assets/bybit.png"
-alt="Bybit">
-
-
-<h3>
-Bybit
-</h3>
-
-
-</div>
-
-
-
-
-<div class="market">
-
-<img src="assets/eldorado.png"
-alt="Eldorado">
-
-
-<h3>
-Eldorado
-</h3>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==============================
-     SEGURIDAD
-================================ -->
-
-<section id="seguridad"
-class="section">
-
-
-<div class="container security">
-
-
-<span class="material-icons">
-verified_user
-</span>
-
-
-<h2>
-Información transparente
-</h2>
-
-
-<p>
-
-Dolarín no realiza operaciones financieras.
-Nuestra misión es brindar información
-para ayudarte a comparar mercados.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- ==============================
-     DESCARGA
-================================ -->
-
-
-<section id="descargar"
-class="download">
-
-
-<div class="container">
-
-
-<h2>
-Descarga Dolarín
-</h2>
-
-
-<p>
-
-Disponible próximamente en Google Play.
-
-</p>
-
-
-
-<a class="play-button">
-
-Google Play
-
-</a>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- ==============================
-     FOOTER
-================================ -->
-
-
-<footer>
-
-
-<div class="container footer-content">
-
-
-<div>
-
-<h3>
-Dolarín
-</h3>
-
-
-<p>
-Tipo de cambio Bolivia.
-</p>
-
-
-</div>
-
-
-
-<div>
-
-
-<a href="privacy.html">
-Privacidad
-</a>
-
-
-<a href="terms.html">
-Términos
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-<p class="copyright">
-
-© <span id="year"></span> Dolarín.
-Todos los derechos reservados.
-
-</p>
-
-
-
-</footer>
-
-
-
-
-
-
-
-<!-- ==============================
-     JAVASCRIPT
-================================ -->
-
-
-<script src="app.js"></script>
-
-
+        <div class="phone" aria-label="Vista previa de Dolarín">
+          <div class="phone-head"><img src="assets/icon.png" alt=""><div><small>BOLIVIA · DÓLAR HOY</small><h2>Dolarín</h2></div></div>
+          <div class="rate"><div class="rate-label">REFERENCIA PRINCIPAL · BCB</div><div class="rate-value">11,77 Bs</div><div class="tomorrow">Mañana · Publicado por el BCB<strong>11,69 Bs</strong></div></div>
+        </div>
+      </section>
+      <section class="features" id="funciones">
+        <div class="section-title"><h2>Cotización del dólar en Bolivia</h2><p>Dolarín prioriza el dólar oficial del Banco Central de Bolivia y presenta las referencias del mercado de forma clara.</p></div>
+        <div class="grid">
+          <article class="feature"><span class="icon">◉</span><b>BCB hoy y mañana</b><p>Consulta la fecha efectiva de cada cotización oficial.</p></article>
+          <article class="feature"><span class="icon">⇄</span><b>Comparación paralela</b><p>Revisa Binance, Bybit y Airtm junto al promedio del mercado.</p></article>
+          <article class="feature"><span class="icon">⌂</span><b>Widget y alertas</b><p>Ten la referencia en tu pantalla y recibe avisos importantes.</p></article>
+          <article class="feature"><span class="icon">▦</span><b>Calculadora boliviana</b><p>Convierte dólares y bolivianos con separadores locales.</p></article>
+          <article class="feature"><span class="icon">⌁</span><b>Historial BCB</b><p>Compara rangos de 7 y 30 días con una gráfica sencilla.</p></article>
+          <article class="feature"><span class="icon">↗</span><b>Comparte la cotización</b><p>Envía una tarjeta diaria por WhatsApp, Messenger y otras apps.</p></article>
+        </div>
+      </section>
+      <section class="cta"><h2>Consulta el dólar con confianza</h2><p>Descarga Dolarín gratis y lleva la información del BCB contigo.</p><a class="play" href="https://play.google.com/store/apps/details?id=com.dolarin.bolivia">▶ Descargar Dolarín</a></section>
+    </main>
+    <footer><span>© 2026 Dolarín · Aplicación independiente</span><div><a href="https://portacris.github.io/dolarin/privacy.html">Privacidad</a><a href="mailto:portacris93@gmail.com">Contacto</a></div></footer>
+  </div>
 </body>
-
 </html>
