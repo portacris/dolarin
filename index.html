@@ -3,23 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Consulta el dólar BCB hoy en Bolivia, la cotización oficial publicada para mañana y referencias de Binance, Bybit y Airtm con Dolarín.">
+  <meta name="description" content="Consulta el dólar oficial del BCB hoy y la cotización publicada para mañana. Descarga Dolarín gratis para Android: alertas, widget, calculadora e historial para Bolivia.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="google-site-verification" content="KPNV6HOY-kZ0FuKUwuvfNQfS7Q8I2w4WqFwZqzmt9VY">
   <meta name="application-name" content="Dolarín">
   <meta name="apple-mobile-web-app-title" content="Dolarín">
   <link rel="canonical" href="https://portacris.github.io/dolarin/">
   <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_BO">
   <meta property="og:site_name" content="Dolarín">
   <meta property="og:title" content="Dolarín – Dólar BCB hoy en Bolivia">
-  <meta property="og:description" content="Consulta el dólar oficial del BCB para hoy y mañana, además de referencias de Binance, Bybit y Airtm.">
+  <meta property="og:description" content="Consulta el dólar oficial del BCB para hoy y mañana. Descarga gratis Dolarín para Android.">
   <meta property="og:url" content="https://portacris.github.io/dolarin/">
   <meta property="og:image" content="https://portacris.github.io/dolarin/assets/logo.png">
+  <meta property="og:image:alt" content="Logo de la aplicación Dolarín Bolivia">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dolarín – Dólar BCB hoy en Bolivia">
-  <meta name="twitter:description" content="Cotización oficial del dólar BCB y referencias del mercado para Bolivia.">
+  <meta name="twitter:description" content="Dólar oficial del BCB hoy y mañana en una app gratuita para Bolivia.">
   <meta name="twitter:image" content="https://portacris.github.io/dolarin/assets/logo.png">
   <meta name="theme-color" content="#071728">
   <title>Dólar BCB hoy en Bolivia | Dolarín</title>
@@ -36,15 +38,17 @@
         "inLanguage": "es-BO"
       },
       {
-        "@type": "SoftwareApplication",
+        "@type": "MobileApplication",
         "@id": "https://portacris.github.io/dolarin/#app",
         "name": "Dolarín",
         "operatingSystem": "Android",
         "applicationCategory": "FinanceApplication",
-        "description": "Aplicación boliviana para consultar la cotización oficial del dólar del BCB para hoy y mañana y comparar referencias de Binance, Bybit y Airtm.",
+        "description": "Aplicación Android gratuita para consultar la cotización oficial del dólar del Banco Central de Bolivia para hoy y mañana, usar una calculadora, revisar el historial y recibir alertas.",
         "url": "https://portacris.github.io/dolarin/",
         "downloadUrl": "https://play.google.com/store/apps/details?id=com.dolarin.bolivia",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.dolarin.bolivia",
         "image": "https://portacris.github.io/dolarin/assets/logo.png",
+        "featureList": ["Cotización oficial del BCB para hoy y mañana", "Widget para Android", "Notificaciones", "Calculadora de dólares y bolivianos", "Historial del BCB"],
         "inLanguage": "es-BO",
         "offers": {
           "@type": "Offer",
@@ -106,16 +110,26 @@
     .cta { margin-bottom:82px; padding:42px; border:1px solid rgba(249,178,41,.22); border-radius:30px; text-align:center; background:linear-gradient(145deg,rgba(249,178,41,.09),rgba(56,189,248,.08)); }
     .cta h2 { margin:0 0 12px; font-size:34px; }
     .cta p { margin:0 0 24px; color:var(--muted); }
+    .info { padding:0 0 96px; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .info-card { padding:30px; border:1px solid rgba(148,163,184,.16); border-radius:25px; background:rgba(7,23,40,.68); }
+    .info-card h2 { margin:0 0 14px; font-size:28px; }
+    .info-card p { margin:0; color:var(--muted); line-height:1.7; }
+    .faq { padding:0 0 96px; }
+    .faq-list { max-width:860px; margin:auto; display:grid; gap:12px; }
+    details { padding:20px 22px; border:1px solid rgba(148,163,184,.16); border-radius:18px; background:rgba(11,41,65,.52); }
+    summary { cursor:pointer; font-weight:850; }
+    details p { margin:13px 0 0; color:var(--muted); line-height:1.65; }
     footer { display:flex; justify-content:space-between; gap:20px; padding:28px 0 42px; border-top:1px solid rgba(148,163,184,.15); color:#7f94a9; font-size:13px; }
     footer div { display:flex; gap:18px; }
-    @media(max-width:780px){ .nav-links{display:none}.hero{grid-template-columns:1fr;padding:42px 0 72px}.grid{grid-template-columns:1fr}.phone{width:min(100%,410px)}footer{flex-direction:column}.cta{padding:30px 20px} }
+    @media(max-width:780px){ .nav-links{display:none}.hero{grid-template-columns:1fr;padding:42px 0 72px}.grid,.info-grid{grid-template-columns:1fr}.phone{width:min(100%,410px)}footer{flex-direction:column}.cta{padding:30px 20px} }
   </style>
 </head>
 <body>
   <div class="wrap">
     <nav>
       <a class="brand" href="#"><img src="assets/logo.png" alt="Logo de Dolarín">Dolarín</a>
-      <div class="nav-links"><a href="#funciones">Funciones</a><a href="https://portacris.github.io/dolarin/privacy.html">Privacidad</a></div>
+      <div class="nav-links"><a href="#funciones">Funciones</a><a href="#preguntas">Preguntas</a><a href="https://portacris.github.io/dolarin/privacy.html">Privacidad</a></div>
     </nav>
     <main>
       <section class="hero">
@@ -130,8 +144,8 @@
           <p class="trust">Gratuita · Sin publicidad personalizada · Información transparente</p>
         </div>
         <div class="phone" aria-label="Vista previa de Dolarín">
-          <div class="phone-head"><img src="assets/logo.png" alt=""><div><small>BOLIVIA · DÓLAR HOY</small><h2>Dolarín</h2></div></div>
-          <div class="rate"><div class="rate-label">REFERENCIA PRINCIPAL · BCB</div><div class="rate-value">11,77 Bs</div><div class="tomorrow">Mañana · Publicado por el BCB<strong>11,69 Bs</strong></div></div>
+          <div class="phone-head"><img src="assets/logo.png" alt="Ícono de Dolarín"><div><small>BOLIVIA · DÓLAR HOY</small><h2>Dolarín</h2></div></div>
+          <div class="rate"><div class="rate-label">REFERENCIA PRINCIPAL · BCB</div><div class="rate-value">Hoy</div><div class="tomorrow">Consulta por fecha de vigencia<strong>Hoy y mañana</strong></div></div>
         </div>
       </section>
       <section class="features" id="funciones">
@@ -143,6 +157,21 @@
           <article class="feature"><span class="icon">▦</span><b>Calculadora boliviana</b><p>Convierte dólares y bolivianos con separadores locales.</p></article>
           <article class="feature"><span class="icon">⌁</span><b>Historial BCB</b><p>Compara rangos de 7 y 30 días con una gráfica sencilla.</p></article>
           <article class="feature"><span class="icon">↗</span><b>Comparte la cotización</b><p>Envía una tarjeta diaria por WhatsApp, Messenger y otras apps.</p></article>
+        </div>
+      </section>
+      <section class="info" aria-label="Información sobre la cotización del dólar en Bolivia">
+        <div class="info-grid">
+          <article class="info-card"><h2>¿Qué dólar muestra Dolarín?</h2><p>La referencia principal es la cotización oficial publicada por el Banco Central de Bolivia (BCB). Dolarín muestra la fecha de vigencia y, cuando el BCB publica el dato siguiente, también presenta el valor correspondiente a mañana.</p></article>
+          <article class="info-card"><h2>Una app creada para Bolivia</h2><p>Dolarín reúne en una sola pantalla el dólar BCB, referencias informativas del mercado, una calculadora de dólares a bolivianos, historial, alertas y widgets para Android. La descarga es gratuita desde Google Play.</p></article>
+        </div>
+      </section>
+      <section class="faq" id="preguntas">
+        <div class="section-title"><h2>Preguntas frecuentes sobre Dolarín</h2><p>Lo esencial antes de descargar la aplicación.</p></div>
+        <div class="faq-list">
+          <details><summary>¿Dolarín es una aplicación oficial del BCB?</summary><p>No. Dolarín es una aplicación independiente que presenta la cotización oficial publicada por el Banco Central de Bolivia y no representa ni pertenece al BCB.</p></details>
+          <details><summary>¿Dónde puedo descargar Dolarín?</summary><p>Dolarín está disponible para Android en Google Play. Usa únicamente el enlace oficial de esta página para instalar la aplicación con seguridad.</p></details>
+          <details><summary>¿La aplicación es gratuita?</summary><p>Sí. Dolarín se descarga gratis e incluye la consulta del dólar BCB, calculadora, historial, notificaciones y widgets.</p></details>
+          <details><summary>¿Cuándo aparece la cotización de mañana?</summary><p>Cuando el BCB publica una nueva cotización, Dolarín identifica su fecha de vigencia y la muestra como el valor de mañana hasta que comienza ese día.</p></details>
         </div>
       </section>
       <section class="cta"><h2>Consulta el dólar con confianza</h2><p>Descarga Dolarín gratis y lleva la información del BCB contigo.</p><a class="play" href="https://play.google.com/store/apps/details?id=com.dolarin.bolivia">▶ Descargar Dolarín</a></section>
